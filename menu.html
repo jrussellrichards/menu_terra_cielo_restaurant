@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Terra Cielo - Menú Digital</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Elegancia) + Inter (Legibilidad) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Ocultar barra de scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        section { scroll-margin-top: 160px; }
+        
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #AA8C2C 100%);
+        }
+        .text-gold {
+            color: #D4AF37;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            950: '#0a0a0a', /* Fondo Principal */
+                            900: '#171717', /* Tarjetas */
+                            800: '#262626', /* Bordes */
+                        },
+                        gold: {
+                            400: '#E5C568',
+                            500: '#D4AF37', /* Dorado Base */
+                            600: '#AA8C2C',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-950 text-gray-200 pb-20">
+
+    <!-- Header Principal -->
+    <header class="bg-dark-950/95 backdrop-blur-md border-b border-dark-800 pt-5 pb-3 px-5 sticky top-0 z-50">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <!-- Espacio para Logo (Reemplaza src con tu archivo, ej: image_181ccb.jpg) -->
+                <!-- <img src="tu_logo.jpg" class="h-12 w-auto object-contain" alt="Logo"> -->
+                
+                <!-- Título si no carga el logo -->
+                <div>
+                    <p class="text-[10px] text-gold-500 font-bold uppercase tracking-[0.2em] mb-1">Cocina de Autor</p>
+                    <h1 class="text-3xl font-serif font-bold text-white leading-none tracking-wide">TERRA CIELO</h1>
+                </div>
+            </div>
+            
+            <!-- Botón WiFi Estilo Premium -->
+            <button onclick="alert('Red: TerraCielo_Guest \nClave: Terra2025')" class="border border-dark-800 bg-dark-900 text-gold-500 w-10 h-10 rounded-full flex items-center justify-center active:bg-gold-500 active:text-dark-950 transition-all duration-300">
+                <i class="fas fa-wifi text-sm"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navegación Estilo "Fine Dining" -->
+    <nav class="sticky top-[85px] z-40 bg-dark-950/90 backdrop-blur-sm border-b border-dark-800 py-4 shadow-2xl">
+        <div class="flex space-x-4 overflow-x-auto hide-scroll px-5">
+            <!-- Botones de navegación con estado activo dorado -->
+            <a href="#ninos" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Niños</a>
+            <a href="#picar" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Para Picar</a>
+            <a href="#principales" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Principales</a>
+            <a href="#ensaladas" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Ensaladas</a>
+            <a href="#pizzas" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Pizzas</a>
+            <a href="#contornos" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Contornos</a>
+            <a href="#bebidas" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Bebidas</a>
+        </div>
+    </nav>
+
+    <main class="max-w-md mx-auto px-5 py-8 space-y-12">
+
+        <!-- Sección: Menú Niños -->
+        <section id="ninos">
+            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Menú Niños</h2>
+            <div class="space-y-5">
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pollo a la Plancha</h3>
+                        <span class="font-mono text-gold-500 text-lg">$25.400</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Acompañado de Papas Fritas.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pizza Margarita peq.</h3>
+                        <span class="font-mono text-gold-500 text-lg">$24.000</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Salsa de Tomate, Queso.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Tender de Pollo</h3>
+                        <span class="font-mono text-gold-500 text-lg">$27.200</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Acompañado de Papas Fritas.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección: Para Picar -->
+        <section id="picar">
+            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Para Picar</h2>
+            <div class="space-y-5">
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Papas Sour Cream</h3>
+                        <span class="font-mono text-gold-500 text-lg">$25.500</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Papa Francesa, Carne Mechada, Salsa Ácida.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Papas Rancheras</h3>
+                        <span class="font-mono text-gold-500 text-lg">$25.500</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Papas Francesas, Tocino, Queso Cheddar.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección: Principales -->
+        <section id="principales">
+            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Principales</h2>
+            <div class="space-y-8">
+                <!-- Plato Destacado -->
+                <article class="bg-dark-900 p-5 rounded-sm border border-dark-800 shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-dark-800 to-transparent -mr-8 -mt-8 rotate-45"></div>
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="font-serif text-xl text-white pr-4">Tentáculo Marinera</h3>
+                        <span class="font-mono text-gold-500 text-lg">$78.000</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Tentáculo de Calamar (200 gr) a la plancha bañado en salsa de mix de mariscos. Acompañado de papas amarillas y ensalada César.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Paila Gratinada</h3>
+                        <span class="font-mono text-gold-500 text-lg">$65.000</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Mix de mariscos (Calamar, Almeja, Vieira, Camarón, Mejillón) en salsa blanca o roja. Con chips de plátano, arroz y ensalada.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pescado a lo Macho</h3>
+                        <span class="font-mono text-gold-500 text-lg">$50.500</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Merluza frita o a la plancha bañada en salsa de jalapeño, camarón y calamar. Chips de papas y ensalada César.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pollo Salsa Primavera</h3>
+                        <span class="font-mono text-gold-500 text-lg">$35.000</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Salsa de maíz, champiñón, bechamel y parmesano. Con papa amarilla, arroz o ensalada.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Lomito al Vino Tinto</h3>
+                        <span class="font-mono text-gold-500 text-lg">$48.000</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">En salsa de vino tinto, sobre cama de arroz cremoso de champiñón y ensalada.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección: Ensaladas -->
+        <section id="ensaladas">
+            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Huerta</h2>
+            <div class="space-y-6">
+                <article class="group">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <h3 class="font-serif text-lg text-white">Ensalada César</h3>
+                        <span class="font-mono text-gold-500 text-lg">$34.000</span>
+                    </div>
+                    <span class="text-xs text-gold-600 font-bold uppercase tracking-wider mb-2 block">Pollo o Camarón</span>
+                    <p class="text-sm text-gray-400 font-light">Lechuga, Parmesano, Tocino, Aderezo, Croutones.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <h3 class="font-serif text-lg text-white">Terra Cielo</h3>
+                        <span class="font-mono text-gold-500 text-lg">$38.000</span>
+                    </div>
+                    <span class="text-xs text-gold-600 font-bold uppercase tracking-wider mb-2 block">Pollo o Camarón</span>
+                    <p class="text-sm text-gray-400 font-light">Lechuga, Aguacate (Palta), Mango, Nuez, Parmesano, Aderezo Mostaza Miel.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección: Pizzas -->
+        <section id="pizzas">
+            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Pizzas</h2>
+            
+            <div class="space-y-6 mb-10">
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white">4 Estaciones</h3>
+                        <span class="font-mono text-gold-500 text-lg">$58.250</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Jamón, Tocino, Salame, Pepperoni.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white">Pollo BBQ</h3>
+                        <span class="font-mono text-gold-500 text-lg">$49.500</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Pollo, Maíz, Tocino, Salsa BBQ.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white">Caprese</h3>
+                        <span class="font-mono text-gold-500 text-lg">$58.000</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Pesto, Nuez, Tomate Cherry, Aceite de Ajo, Parmesano.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white">San Cristóbal</h3>
+                        <span class="font-mono text-gold-500 text-lg">$42.000</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Champiñón, Pollo, Jamón, Cebolla Crispy.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white">Camarón</h3>
+                        <span class="font-mono text-gold-500 text-lg">$58.000</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Camarones, Aceite de Ajo, Cilantro, Parmesano.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white">Marinera</h3>
+                        <span class="font-mono text-gold-500 text-lg">$70.000</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Salsa de Mariscos, Camarón, Vieira, Calamar, Mejillón, Almeja, Mozzarella.</p>
+                </article>
+
+                <!-- Arma Tu Pizza Highlight -->
+                <article class="gold-gradient p-[1px] rounded-lg">
+                    <div class="bg-dark-900 rounded-lg p-5 h-full">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif font-bold text-xl text-gold-400">Arma Tu Pizza</h3>
+                            <span class="font-mono font-bold text-white">$55.000</span>
+                        </div>
+                        <p class="text-sm text-gray-300 font-light">Base Salsa, Queso y 3 ingredientes a tu elección.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Adicionales Pizza -->
+            <div class="bg-dark-900 rounded-sm p-6 border border-dark-800">
+                <h4 class="text-xs font-bold text-gray-500 uppercase tracking-[0.2em] mb-6 text-center">Adicionales</h4>
+                
+                <div class="grid grid-cols-2 gap-x-6 gap-y-8 text-sm">
+                    <div>
+                        <span class="block font-mono text-gold-500 mb-2">$3.000</span>
+                        <ul class="text-gray-400 font-light space-y-1"><li>Tomate</li></ul>
+                    </div>
+                    <div>
+                        <span class="block font-mono text-gold-500 mb-2">$4.000</span>
+                        <ul class="text-gray-400 font-light space-y-1"><li>Pimentón</li><li>Maíz</li><li>Cebolla Crispy</li><li>Albahaca</li></ul>
+                    </div>
+                    <div>
+                        <span class="block font-mono text-gold-500 mb-2">$5.000</span>
+                        <ul class="text-gray-400 font-light space-y-1"><li>Jamón</li><li>Piña</li><li>Aceitunas</li></ul>
+                    </div>
+                    <div>
+                        <span class="block font-mono text-gold-500 mb-2">$7.000</span>
+                        <ul class="text-gray-400 font-light space-y-1"><li>Champiñón</li><li>Pollo</li></ul>
+                    </div>
+                    <div class="col-span-2">
+                        <span class="block font-mono text-gold-500 mb-2">$8.000</span>
+                        <div class="grid grid-cols-2 gap-2 text-gray-400 font-light">
+                           <span>Tocino</span><span>Parmesano</span><span>Salame</span><span>Queso Azul</span><span>Pecorino</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="block font-mono text-gold-500 mb-2">$9.000</span>
+                        <ul class="text-gray-400 font-light space-y-1"><li>Pepperoni</li></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Contornos -->
+        <section id="contornos">
+            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Guarniciones</h2>
+            <div class="bg-dark-900 p-6 rounded-sm border border-dark-800">
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Vegetales Salteados</span>
+                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Arroz</span>
+                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Chips de Plátano</span>
+                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Chips de Papas</span>
+                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Papas Fritas</span>
+                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Papa Amarilla</span>
+                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Ensalada César</span>
+                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Aguacate</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Bebidas -->
+        <section id="bebidas">
+            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Bebidas</h2>
+            <div class="space-y-5">
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Refresco (Litro)</h3>
+                        <span class="font-mono text-gold-500 text-lg">$10.000</span>
+                    </div>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Refresco (Individual)</h3>
+                        <span class="font-mono text-gold-500 text-lg">$6.000</span>
+                    </div>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Agua Mineral</h3>
+                        <span class="font-mono text-gold-500 text-lg">$6.000</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-950 border-t border-dark-800 py-12 text-center text-gray-600 text-xs">
+        <h4 class="font-serif text-lg text-gray-500 mb-4 tracking-widest">TERRA CIELO</h4>
+        <p class="font-light">Experiencia Gastronómica</p>
+    </footer>
+
+</body>
+</html>
