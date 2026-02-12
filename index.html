@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,7 +8,9 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Playfair Display (Elegancia) + Inter (Legibilidad) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
@@ -16,18 +19,32 @@
             font-family: 'Inter', sans-serif;
             -webkit-tap-highlight-color: transparent;
         }
-        h1, h2, h3, .font-serif {
+
+        h1,
+        h2,
+        h3,
+        .font-serif {
             font-family: 'Playfair Display', serif;
         }
+
         /* Ocultar barra de scroll */
-        .hide-scroll::-webkit-scrollbar { display: none; }
-        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
-        
-        section { scroll-margin-top: 160px; }
-        
+        .hide-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scroll {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        section {
+            scroll-margin-top: 160px;
+        }
+
         .gold-gradient {
             background: linear-gradient(135deg, #D4AF37 0%, #AA8C2C 100%);
         }
+
         .text-gold {
             color: #D4AF37;
         }
@@ -53,6 +70,7 @@
         }
     </script>
 </head>
+
 <body class="bg-dark-950 text-gray-200 pb-20">
 
     <!-- Header Principal -->
@@ -61,10 +79,11 @@
             <div class="flex flex-col items-center gap-1">
                 <!-- Espacio para Logo -->
                 <img src="logo.png" class="h-40 w-auto object-contain scale-110" alt="">
-                
+
                 <!-- Título si no carga el logo -->
                 <div>
-                    <p class="text-[10px] text-gold-500 font-bold uppercase tracking-[0.2em] mb-1 text-center">Cocina de Autor</p>
+                    <p class="text-[10px] text-gold-500 font-bold uppercase tracking-[0.2em] mb-1 text-center">Cocina de
+                        Autor</p>
                 </div>
             </div>
         </div>
@@ -74,14 +93,23 @@
     <nav class="sticky top-[190px] z-40 bg-dark-950/90 backdrop-blur-sm border-b border-dark-800 py-4 shadow-2xl">
         <div class="flex space-x-4 overflow-x-auto hide-scroll px-5">
             <!-- Botones de navegación con estado activo dorado -->
-            <a href="#ninos" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Niños</a>
-            <a href="#picar" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Para Picar</a>
-            <a href="#principales" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Principales</a>
-            <a href="#pastas" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Pastas</a>
-            <a href="#ensaladas" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Ensaladas</a>
-            <a href="#pizzas" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Pizzas</a>
-            <a href="#contornos" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Contornos</a>
-            <a href="#bebidas" class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Bebidas</a>
+            <a href="#ninos"
+                class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Niños</a>
+            <a href="#picar"
+                class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Para
+                Picar</a>
+            <a href="#principales"
+                class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Principales</a>
+            <a href="#pastas"
+                class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Pastas</a>
+            <a href="#ensaladas"
+                class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Ensaladas</a>
+            <a href="#pizzas"
+                class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Pizzas</a>
+            <a href="#contornos"
+                class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Contornos</a>
+            <a href="#bebidas"
+                class="whitespace-nowrap text-sm font-serif tracking-wide text-gray-400 hover:text-gold-400 focus:text-gold-500 transition-colors">Bebidas</a>
         </div>
     </nav>
 
@@ -89,11 +117,13 @@
 
         <!-- Sección: Menú Niños -->
         <section id="ninos">
-            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Menú Niños</h2>
+            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Menú Niños
+            </h2>
             <div class="space-y-5">
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pollo a la Plancha</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pollo a la
+                            Plancha</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 25.500</span>
                     </div>
                     <p class="text-sm text-gray-400 font-light">Acompañado de Papas Fritas.</p>
@@ -101,7 +131,8 @@
 
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pizza Margarita peq.</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pizza
+                            Margarita peq.</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 24.000</span>
                     </div>
                     <p class="text-sm text-gray-400 font-light">Salsa de Tomate, Queso.</p>
@@ -109,7 +140,8 @@
 
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Tender de Pollo</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Tender de
+                            Pollo</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 28.000</span>
                     </div>
                     <p class="text-sm text-gray-400 font-light">Acompañado de Papas Fritas.</p>
@@ -119,70 +151,105 @@
 
         <!-- Sección: Para Picar -->
         <section id="picar">
-            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Para Picar</h2>
+            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Para Picar
+            </h2>
             <div class="space-y-5">
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Papas Sour Cream</h3>
-                        <span class="font-mono text-gold-500 text-lg">COP 25.500</span>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Ceviche
+                        </h3>
+                        <span class="font-mono text-gold-500 text-lg">COP 30.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light">Papa Francesa, Carne Mechada, Salsa Ácida.</p>
+                    <p class="text-sm text-gray-400 font-light">Filete de merluza marinado en limón y leche de tigre
+                        (aderezo de la casa) cilantro, pimentón y cebolla morada. Acompañado de chip de plátanos o chip
+                        de papas.</p>
                 </article>
 
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Papas Rancheras</h3>
-                        <span class="font-mono text-gold-500 text-lg">COP 25.500</span>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Ceviche
+                            mixto</h3>
+                        <span class="font-mono text-gold-500 text-lg">COP 35.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light">Papas Francesas, Tocineta, Queso Cheddar.</p>
+                    <p class="text-sm text-gray-400 font-light">Filete de merluza y camarones marinado en limón y leche
+                        de tigre (aderezo de la casa) cilantro pimentón y cebolla morada. Acompañado de chip de plátano
+                        o chips de papa.</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Aros de
+                            calamar apañados</h3>
+                        <span class="font-mono text-gold-500 text-lg">COP 28.000</span>
+                    </div>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Camarones
+                            apañados</h3>
+                        <span class="font-mono text-gold-500 text-lg">COP 28.000</span>
+                    </div>
                 </article>
             </div>
         </section>
 
         <!-- Sección: Principales -->
         <section id="principales">
-            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Principales</h2>
+            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Principales
+            </h2>
             <div class="space-y-8">
                 <!-- Plato Destacado -->
                 <article class="bg-dark-900 p-5 rounded-sm border border-dark-800 shadow-xl relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-dark-800 to-transparent -mr-8 -mt-8 rotate-45"></div>
+                    <div
+                        class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-dark-800 to-transparent -mr-8 -mt-8 rotate-45">
+                    </div>
                     <div class="flex justify-between items-start mb-3">
                         <h3 class="font-serif text-xl text-white pr-4">Tentáculo Marinera</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 78.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed">Tentáculo de Calamar (200 gr) a la plancha bañado en salsa de mix de mariscos. Acompañado de papas amarillas y ensalada César.</p>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Tentáculo de Calamar (200 gr) a la
+                        plancha bañado en salsa de mix de mariscos. Acompañado de papas amarillas y ensalada César.</p>
                 </article>
 
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Paila Gratinada</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Paila
+                            Gratinada</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 70.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed">Mix de mariscos (Calamar, Almeja, Vieira, Camarón, Mejillón) en salsa blanca o roja. Con chips de plátano, arroz y ensalada.</p>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Mix de mariscos (Calamar, Almeja,
+                        Vieira, Camarón, Mejillón) en salsa blanca o roja. Con chips de plátano, arroz y ensalada.</p>
                 </article>
 
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pescado a lo Macho</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pescado a
+                            lo Macho</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 58.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed">Merluza frita o a la plancha bañada en salsa de jalapeño, camarón y calamar. Chips de papas y ensalada César.</p>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Merluza frita o a la plancha bañada en
+                        salsa de jalapeño, camarón y calamar. Chips de papas y ensalada César.</p>
                 </article>
 
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pollo Salsa Primavera</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pollo
+                            Salsa Primavera</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 35.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed">Salsa de maíz, champiñón, bechamel y parmesano. Con papa amarilla, arroz o ensalada.</p>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Salsa de maíz, champiñón, bechamel y
+                        parmesano. Con papa amarilla, arroz o ensalada.</p>
                 </article>
 
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Lomito al Vino Tinto</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Lomito al
+                            Vino Tinto</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 50.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light leading-relaxed">En salsa de vino tinto, sobre cama de arroz cremoso de champiñón y ensalada.</p>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">En salsa de vino tinto, sobre cama de
+                        arroz cremoso de champiñón y ensalada.</p>
                 </article>
             </div>
         </section>
@@ -193,76 +260,92 @@
             <div class="space-y-5">
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pasta a elección</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pasta a
+                            elección</h3>
                     </div>
-                    <p class="text-sm text-gray-400 font-light">Ravioli Ricota con Espinaca, Ravioli Mechada Queso mosorella, Ravioli Cebolla Caramelizada Queso mosorella, Spagooti o Fetuchini.</p>
+                    <p class="text-sm text-gray-400 font-light">Ravioli Ricota con Espinaca, Ravioli Mechada Queso
+                        mosorella, Ravioli Cebolla Caramelizada Queso mosorella, Spagooti o Fetuchini.</p>
                 </article>
-                <p class="text-sm text-gray-400 font-light italic">Todos Nuestros Pastas Se Acompañan Con Pan Al Ajillo</p>
-                
+                <p class="text-sm text-gray-400 font-light italic">Todos Nuestros Pastas Se Acompañan Con Pan Al Ajillo
+                </p>
+
                 <h3 class="text-lg font-serif text-gold-500 mt-8 mb-4">Salsas</h3>
-                
+
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Crema de Pesto</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Crema de
+                            Pesto</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 38.500</span>
                     </div>
                     <p class="text-sm text-gray-400 font-light">Albahaca, Parmesano, nuez, Ajo, oliva, Crema.</p>
                 </article>
-                
+
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Alfredo</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Alfredo
+                        </h3>
                         <span class="font-mono text-gold-500 text-lg">COP 35.000</span>
                     </div>
                     <p class="text-sm text-gray-400 font-light">Mantequilla, Jamon, vino Blanco, Bechamel.</p>
                 </article>
-                
+
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pomodoro</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Pomodoro
+                        </h3>
                         <span class="font-mono text-gold-500 text-lg">COP 31.000</span>
                     </div>
                     <p class="text-sm text-gray-400 font-light">Tomate, Ajo, mantequilla.</p>
                 </article>
-                
+
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Bolonesa</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Bolonesa
+                        </h3>
                         <span class="font-mono text-gold-500 text-lg">COP 36.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light">Salsa de Tomate (Pomodoro), Carne molida, Sofrida, Reducida en Vino Tinto y verdores.</p>
+                    <p class="text-sm text-gray-400 font-light">Salsa de Tomate (Pomodoro), Carne molida, Sofrida,
+                        Reducida en Vino Tinto y verdores.</p>
                 </article>
-                
+
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">4 Quesos</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">4 Quesos
+                        </h3>
                         <span class="font-mono text-gold-500 text-lg">COP 48.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light">Quesos Seleccionados, Parmesano, mosorella, Pecorino, Queso Azul.</p>
+                    <p class="text-sm text-gray-400 font-light">Quesos Seleccionados, Parmesano, mosorella, Pecorino,
+                        Queso Azul.</p>
                 </article>
-                
+
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Camaron</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Camaron
+                        </h3>
                         <span class="font-mono text-gold-500 text-lg">COP 45.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light">Salsa a base de un BisQue de Camaron, Crema y Camarons Salteados.</p>
+                    <p class="text-sm text-gray-400 font-light">Salsa a base de un BisQue de Camaron, Crema y Camarons
+                        Salteados.</p>
                 </article>
-                
+
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Marinera</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Marinera
+                        </h3>
                         <span class="font-mono text-gold-500 text-lg">COP 68.500</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light">Mix de mariscos, Camaron, Calamar, Vieira, Almeja, mejillon, Salsa Blanca o Roja.</p>
+                    <p class="text-sm text-gray-400 font-light">Mix de mariscos, Camaron, Calamar, Vieira, Almeja,
+                        mejillon, Salsa Blanca o Roja.</p>
                 </article>
-                
+
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Terra Cielo</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Terra
+                            Cielo</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 39.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light">Champiñon Salteado, Tomate cherry, vino Blanco, Ajo, Mantequilla, Albahaca.</p>
+                    <p class="text-sm text-gray-400 font-light">Champiñon Salteado, Tomate cherry, vino Blanco, Ajo,
+                        Mantequilla, Albahaca.</p>
                 </article>
             </div>
         </section>
@@ -276,7 +359,8 @@
                         <h3 class="font-serif text-lg text-white">Ensalada César</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 34.000</span>
                     </div>
-                    <span class="text-xs text-gold-600 font-bold uppercase tracking-wider mb-2 block">Pollo o Camarón</span>
+                    <span class="text-xs text-gold-600 font-bold uppercase tracking-wider mb-2 block">Pollo o
+                        Camarón</span>
                     <p class="text-sm text-gray-400 font-light">Lechuga, Parmesano, Tocineta, Aderezo, Croutones.</p>
                 </article>
 
@@ -285,8 +369,10 @@
                         <h3 class="font-serif text-lg text-white">Terra Cielo</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 38.000</span>
                     </div>
-                    <span class="text-xs text-gold-600 font-bold uppercase tracking-wider mb-2 block">Pollo o Camarón</span>
-                    <p class="text-sm text-gray-400 font-light">Lechuga, Aguacate (Palta), Mango, Nuez, Parmesano, Aderezo Mostaza Miel.</p>
+                    <span class="text-xs text-gold-600 font-bold uppercase tracking-wider mb-2 block">Pollo o
+                        Camarón</span>
+                    <p class="text-sm text-gray-400 font-light">Lechuga, Aguacate (Palta), Mango, Nuez, Parmesano,
+                        Aderezo Mostaza Miel.</p>
                 </article>
             </div>
         </section>
@@ -294,8 +380,32 @@
         <!-- Sección: Pizzas -->
         <section id="pizzas">
             <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Pizzas</h2>
-            
+
             <div class="space-y-6 mb-10">
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white">Pizza Peperoni</h3>
+                        <span class="font-mono text-gold-500 text-lg">COP 42.000</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Salsa napole , queso Peperoni</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white">Jardinera</h3>
+                        <span class="font-mono text-gold-500 text-lg">COP 43.000</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Champiñón al ajillo, maíz. Pimentón cebolla</p>
+                </article>
+
+                <article class="group">
+                    <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
+                        <h3 class="font-serif text-lg text-white">Primavera</h3>
+                        <span class="font-mono text-gold-500 text-lg">COP 46.000</span>
+                    </div>
+                    <p class="text-sm text-gray-400 font-light">Tocineta. Maíz pollo aceite de ajo</p>
+                </article>
+
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
                         <h3 class="font-serif text-lg text-white">4 Estaciones</h3>
@@ -315,9 +425,10 @@
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
                         <h3 class="font-serif text-lg text-white">Caprese</h3>
-                        <span class="font-mono text-gold-500 text-lg">COP 58.000</span>
+                        <span class="font-mono text-gold-500 text-lg">COP 50.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light">Pesto, Nuez, Tomate Cherry, Aceite de Ajo, Parmesano.</p>
+                    <p class="text-sm text-gray-400 font-light">Salsa Nápoles queso mozzanera tomates salsa pesto aceite
+                        de ajo nuez y queso pecorino</p>
                 </article>
 
                 <article class="group">
@@ -341,51 +452,60 @@
                         <h3 class="font-serif text-lg text-white">Marinera</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 75.000</span>
                     </div>
-                    <p class="text-sm text-gray-400 font-light">Salsa de Mariscos, Camarón, Vieira, Calamar, Mejillón, Almeja, Mozzarella.</p>
+                    <p class="text-sm text-gray-400 font-light">Salsa de Mariscos, Camarón, Vieira, Calamar, Mejillón,
+                        Almeja, Mozzarella.</p>
                 </article>
 
-                <!-- Arma Tu Pizza Highlight -->
-                <article class="gold-gradient p-[1px] rounded-lg">
-                    <div class="bg-dark-900 rounded-lg p-5 h-full">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-serif font-bold text-xl text-gold-400">Arma Tu Pizza</h3>
-                            <span class="font-mono font-bold text-white">COP 55.000</span>
-                        </div>
-                        <p class="text-sm text-gray-300 font-light">Base Salsa, Queso y 3 ingredientes a tu elección.</p>
-                    </div>
-                </article>
+
             </div>
 
             <!-- Adicionales Pizza -->
             <div class="bg-dark-900 rounded-sm p-6 border border-dark-800">
                 <h4 class="text-xs font-bold text-gray-500 uppercase tracking-[0.2em] mb-6 text-center">Adicionales</h4>
-                
+
                 <div class="grid grid-cols-2 gap-x-6 gap-y-8 text-sm">
                     <div>
                         <span class="block font-mono text-gold-500 mb-2">COP 3.000</span>
-                        <ul class="text-gray-400 font-light space-y-1"><li>Tomate</li></ul>
+                        <ul class="text-gray-400 font-light space-y-1">
+                            <li>Tomate</li>
+                        </ul>
                     </div>
                     <div>
                         <span class="block font-mono text-gold-500 mb-2">COP 4.000</span>
-                        <ul class="text-gray-400 font-light space-y-1"><li>Pimentón</li><li>Maíz</li><li>Cebolla Crispy</li><li>Albahaca</li></ul>
+                        <ul class="text-gray-400 font-light space-y-1">
+                            <li>Pimentón</li>
+                            <li>Maíz</li>
+                            <li>Cebolla Crispy</li>
+                            <li>Albahaca</li>
+                        </ul>
                     </div>
                     <div>
                         <span class="block font-mono text-gold-500 mb-2">COP 5.000</span>
-                        <ul class="text-gray-400 font-light space-y-1"><li>Jamón</li><li>Piña</li><li>Aceitunas</li></ul>
+                        <ul class="text-gray-400 font-light space-y-1">
+                            <li>Jamón</li>
+                            <li>Piña</li>
+                            <li>Aceitunas</li>
+                        </ul>
                     </div>
                     <div>
                         <span class="block font-mono text-gold-500 mb-2">COP 7.000</span>
-                        <ul class="text-gray-400 font-light space-y-1"><li>Champiñón</li><li>Pollo</li></ul>
+                        <ul class="text-gray-400 font-light space-y-1">
+                            <li>Champiñón</li>
+                            <li>Pollo</li>
+                        </ul>
                     </div>
                     <div class="col-span-2">
                         <span class="block font-mono text-gold-500 mb-2">COP 8.000</span>
                         <div class="grid grid-cols-2 gap-2 text-gray-400 font-light">
-                           <span>Tocineta</span><span>Parmesano</span><span>Salame</span><span>Queso Azul</span><span>Pecorino</span>
+                            <span>Tocineta</span><span>Parmesano</span><span>Salame</span><span>Queso
+                                Azul</span><span>Pecorino</span>
                         </div>
                     </div>
                     <div>
                         <span class="block font-mono text-gold-500 mb-2">COP 9.000</span>
-                        <ul class="text-gray-400 font-light space-y-1"><li>Pepperoni</li></ul>
+                        <ul class="text-gray-400 font-light space-y-1">
+                            <li>Pepperoni</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -393,17 +513,32 @@
 
         <!-- Sección: Contornos -->
         <section id="contornos">
-            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Guarniciones</h2>
+            <h2 class="text-2xl font-serif font-italic text-gold-500 mb-6 border-l-2 border-gold-500 pl-4">Guarniciones
+            </h2>
             <div class="bg-dark-900 p-6 rounded-sm border border-dark-800">
                 <div class="flex flex-wrap gap-3">
-                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Vegetales Salteados</span>
-                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Arroz</span>
-                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Chips de Plátano</span>
-                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Chips de Papas</span>
-                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Papas Fritas</span>
-                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Papa Amarilla</span>
-                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Ensalada César</span>
-                    <span class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Aguacate</span>
+                    <span
+                        class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Vegetales
+                        Salteados</span>
+                    <span
+                        class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Arroz</span>
+                    <span
+                        class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Chips
+                        de Plátano</span>
+                    <span
+                        class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Chips
+                        de Papas</span>
+                    <span
+                        class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Papas
+                        Fritas</span>
+                    <span
+                        class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Papa
+                        Amarilla</span>
+                    <span
+                        class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Ensalada
+                        César</span>
+                    <span
+                        class="px-4 py-2 border border-dark-800 text-gray-300 rounded-full text-sm font-light hover:border-gold-600 transition-colors">Aguacate</span>
                 </div>
             </div>
         </section>
@@ -414,21 +549,24 @@
             <div class="space-y-5">
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Refresco (Litro)</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Refresco
+                            (Litro)</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 6.000</span>
                     </div>
                 </article>
 
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Refresco (Individual)</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Refresco
+                            (Individual)</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 5.000</span>
                     </div>
                 </article>
 
                 <article class="group">
                     <div class="flex justify-between items-baseline border-b border-dark-800 pb-2 mb-2">
-                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Agua Mineral</h3>
+                        <h3 class="font-serif text-lg text-white group-hover:text-gold-400 transition-colors">Agua
+                            Mineral</h3>
                         <span class="font-mono text-gold-500 text-lg">COP 4.000</span>
                     </div>
                 </article>
@@ -444,4 +582,5 @@
     </footer>
 
 </body>
+
 </html>
